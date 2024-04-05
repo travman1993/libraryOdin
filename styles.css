@@ -1,0 +1,85 @@
+* {
+    border: red 1px solid;
+}
+body {
+    background-image: url("imges/pexels-ivo-rainha-1290141.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    background-color: #333333de;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+.btn {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+button {
+    border: none;
+    border-radius: 25px;
+    background-color: #333333d3;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: .5em;
+}
+button:hover {
+    background-color: #555;
+}
+.move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ form {
+    background-color: rgba(106, 127, 147, 0.86);
+    border-radius: 20px;
+    padding: 20px;
+ }  
+label {
+    font: bold 20px Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    border: none;
+    border-radius: 5px;
+    margin: .5em;
+}
+input:hover {
+    background-color: #99cbcd;
+}
+input:focus {
+    background-color: #979a9b;
+}
+h3 {
+    font: bold 15px times new roman;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+checkbox:hover {
+    background-color: #99cbcd;
+}
+.subBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
