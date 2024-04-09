@@ -1,6 +1,4 @@
-* {
-    border: red 1px solid;
-}
+
 body {
     background-image: url("imges/pexels-ivo-rainha-1290141.jpg");
     background-size: cover;
@@ -60,7 +58,8 @@ input {
 }
 input:hover {
     background-color: #99cbcd;
-}
+
+}   }
 input:focus {
     background-color: #979a9b;
 }
@@ -82,4 +81,58 @@ checkbox:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.library {
+}
+h3 {
+    font: bold 25px times new roman;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.card-all {
+    margin-right: 150px;
+    margin-left: 150px;
+    max-height: 100%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(106, 127, 147, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: .2fr 1fr;
+    grid-template-areas: 
+    "title"
+    "auther"
+    "p p"
+    "btn btn";
+}
+.card-header {
+    margin-top: -10px;
+    margin-bottom: -40px;
+    display: flex;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: 1em .1fr;
+    grid-template-columns: 1fr;
+    display-template-areas:
+        "title"
+        "auther";
+}
+p {
+    margin-bottom: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-body {
+    display: flex;
+    justify-items: center;
+    display: grid;
+    grid-template-areas: 
+    "p p"
+    "btn btn";
 }

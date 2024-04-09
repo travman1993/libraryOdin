@@ -31,16 +31,18 @@ function render() {
         let bookEl = document.createElement('div');
         bookEl.classList.add('card');
         bookEl.innerHTML = `
+        <div class="card-all">
             <div class="card-header">
-                <h3 class="title">${book.title}</h3>
-                <h4 class="auther">by ${book.author}</h4>
+                <h3 class="title">Title:${book.title}</h3>
+                <h4 class="auther">By: ${book.author}</h4>
             </div>
             <div class="card-body">
-                <p class="pages">${book.pages}</p>
+                <p class="pages"> ${book.pages}:Pages</p>
                 <p class="read-status">${book.read ? "Read" : "Not Read Yet"}</p>
-                <button class="btn btn-danger" onclick="removeBook(${i})">Remove</button>
-                <button class="btn btn-primary" onclick="toggleRead(${i})">Toggle Read</button>
+                <button id="cardBtnBtn" class="btn btn-danger" onclick="removeBook(${i})">Remove</button>
+                <button id="cardBtnBtn" class="btn btn-primary" onclick="toggleRead(${i})">Read?</button>
             </div>
+        </div>
         `;
         libraryEl.appendChild(bookEl);
     }
