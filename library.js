@@ -7,15 +7,17 @@ newBtn.addEventListener('click', function() {
     newForm.style.display = 'block';
 })
 
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-}
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 
-Book.prototype.toggleRead = function() {
+    toggleRead() {
     this.read = !this.read;
+    }
 }
 
 function toggleRead(index) {
